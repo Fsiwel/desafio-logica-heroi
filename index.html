@@ -2,68 +2,83 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ficha de Herói RPG</title>
-  <!--Fonte-->
-  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ficha de Herói RPG</title>
+    <!--Fonte-->
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap" rel="stylesheet">
 
-  <!--Estilos-->
-  <link rel="stylesheet" href="./src/styles/reset.css">
- <link rel="stylesheet" href="./src/styles/main.css">
+    <!--Estilos-->
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/main.css">
 </head>
 
 <body>
-  <fieldset>
-    <form>
-      <div class="info_heroi">
-        <label>Nome do Herói:</label>
-        <input type="text" id="nome_heroi" placeholder="Ex Aragorn" />
+    <fieldset>
+        <form>
+            <div class="info_heroi">
+                <label>Nome do Herói:</label>
+                <input type="text" id="nome_heroi" placeholder="Ex Aragorn" />
 
-        <label>Idade do Herói:</label>
-        <input type="number" placeholder="Digite a idade do Herói" />
+                <label>Idade do Herói:</label>
+                <input type="number" placeholder="Digite a idade do Herói" />
+                <div class="sexo">
+                    <label>Sexo:</label>
+                    <input type="radio" name="sexo" id="sexo-m" value="m">
+                    <label for="sexo-m">Masculino</label>
 
-        <label>Sexo:</label>
-        <input type="radio" name="sexo" value="Masculino" /> Masculino
-        <input type="radio" name="sexo" value="Feminino" /> Feminino
+                    <input type="radio" name="sexo" id="sexo-f" value="f">
+                    <label for="sexo-f">Feminino</label>
 
-        <label>Experiência (XP):</label>
-        <input type="text" placeholder="Digite a XP do Herói" />
+                </div>
 
-        <label for="classe">Escolha Sua Classe:</label>
-        <select id="classe" name="classe">
-          <option value="guerreiro">Guerreiro</option>
-          <option value="ladino">Ladino</option>
-          <option value="mago">Mago</option>
-          <option value="bardo">Bardo</option>
-          <option value="clerigo">Clérigo</option>
-        </select>
-      </div>
+                <label>Experiência (XP):</label>
+                <input type="text" placeholder="Digite a XP do Herói" />
+                <label for="classe">Escolha Sua Classe:</label>
+                <select id="classe" name="classe">
+                    <option value="vazio"></option>
+                    <option value="guerreiro">Guerreiro</option>
+                    <option value="ladino">Ladino</option>
+                    <option value="mago">Mago</option>
+                    <option value="bardo">Bardo</option>
+                    <option value="clerigo">Clérigo</option>
+                </select>
 
-      <div class="atributos_heroi">
-        <label>Força</label>
-        <input type="text" disabled value="">
+                <label for=""> Ranking Herói: </label>
+            <textarea disabled placeholder=""></textarea>
 
-        <label>Inteligência</label>
-        <input type="text" disabled value="">
+            </div>
 
-        <label>Resistência</label>
-        <input type="text" disabled value="">
 
-        <label>Mana</label>
-        <input type="text" disabled value="">
 
-        <label>Reflexos</label>
-        <input type="text" disabled value="">
 
-        <label>Carisma</label>
-        <input type="text" disabled value="">
-      </div>
+            <div class="atributos_heroi">
+                <label>Força</label>
+                <input type="text" disabled value="">
 
-      <img id="clase_personagem" src="./images/guerreiro.png" alt="Imagem da Classe" />
-    </form>
-  </fieldset>
+                <label>Inteligência</label>
+                <input type="text" disabled value="">
 
+                <label>Resistência</label>
+                <input type="text" disabled value="">
+
+                <label>Mana</label>
+                <input type="text" disabled value="">
+
+                <label>Reflexos</label>
+                <input type="text" disabled value="">
+
+                <label>Carisma</label>
+                <input type="text" disabled value="">
+
+
+            </div>
+            <img id="clase_personagem" src="./src/images/vazio.png" alt="Escolha uma Classe" />
+
+        </form>
+    </fieldset>
+
+    <script src="src/scripts/index.js"></script>
 
 </body>
 

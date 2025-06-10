@@ -1,57 +1,91 @@
  body {
-      font-family: 'IM Fell English SC', serif;
-      background-color: #1a1a1a;
-      color: #f0f0f0;
-      padding: 7rem;      
-    }
+     font-family: 'IM Fell English SC', serif;
+     background-color: #1a1a1a;
+     color: #f0f0f0;
+     padding: 5rem;
+     overflow: hidden;
+ }
 
-    
 
-    form {
-        display: flex;
-        text-align: center;
-        padding: 15px;
-        justify-content: space-between;
-    }
-    fieldset {
-      display: flex;
-      flex-direction: column;
-      border: 3px solid #ffd700;
-      padding: 2rem;
-      border-radius: 10px;
-      background-color: #2c2c2c; 
-    }
 
-    
-    
-
-  
-    .info_heroi, .atributos_heroi {
-      margin-bottom: 1rem;
-      width: 15rem;
-    
-    }
-
-    label {
-      display: block;
-      margin-top: 0.5rem;
-    }
-
-    input, select {
+ form {
      display: flex;
-      width: 100%;
-      padding: 0.5rem;
-      margin-top: 0.2rem;
-      background-color: #333;
-      color: white;
-      border: 1px solid #555;
-      border-radius: 5px;
-    }
+     text-align: center;
+     padding: 15px;
+     justify-content: space-between;
+ }
 
-    #clase_personagem {
-      display: block;
-      margin: 1rem auto;
-      max-width: 150px;
-      height: auto;
-      image-rendering: pixelated;
-    }
+ fieldset {
+     display: flex;
+     flex-direction: column;
+     border: 3px solid #ffd700;
+     padding: 2rem;
+     border-radius: 10px;
+     background-color: #2c2c2c;
+ }
+
+
+ .info_heroi,
+ .atributos_heroi {
+     margin-bottom: 2rem;
+     width: 15rem;
+     padding: 1rem;
+
+ }
+
+ label {
+     display: block;
+     margin-top: 0.5rem;
+ }
+
+ input,
+ select {
+     display: flex;
+     width: 100%;
+     padding: 0.5rem;
+     margin-top: 0.2rem;
+     background-color: #333;
+     color: white;
+     border: 1px solid #555;
+     border-radius: 5px;
+ }
+
+ .sexo {
+     display: flex;
+     align-items: center;
+     flex-direction: row;
+     justify-content: space-between;
+ }
+
+ #masculino,
+ #feminino {
+     display: flex;
+     justify-content: space-between;
+     padding: 15px;
+ }
+
+ #clase_personagem {
+     display: block;
+     margin: 1rem auto;
+     max-width: 300px;
+     height: auto;
+     image-rendering: pixelated;
+ }
+
+ textarea {
+     width: 205px;
+     height: 110px;
+     display: flex;
+     margin-top: 10px
+ }
+
+ #clase_personagem {
+     width: 400px;
+     /* Largura padrão */
+     height: 400px;
+     /* Altura padrão */
+     object-fit: contain;
+     /* Garante que a imagem não estique */
+     display: block;
+     justify-content: center;
+ }
